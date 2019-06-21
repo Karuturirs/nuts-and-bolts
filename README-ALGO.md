@@ -13,7 +13,12 @@
 ## notes
 
 * Insertion sort picking a card from the desk one after other and filling in sorting order from right to left
-* 
+
+* Merge sort is whne you have two sorted pile facing up, pick the smallest of both pile and place it in new third pile. but do it recursive.
+
+* Binery search:
+
+  > observe that if the sequence A is sorted, we can check the midpoint of the sequence against  and eliminate half of the sequence from further consideration. The binary search algorithm repeats this procedure, halving the size of the remaining portion of the sequence each time. Write pseudocode, either iterative or recursive, for binary search. Argue that the worst-case running time of binary search is $log n$
 
 
 
