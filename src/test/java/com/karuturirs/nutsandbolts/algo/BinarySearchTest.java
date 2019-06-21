@@ -27,7 +27,18 @@ public class BinarySearchTest {
 		BinarySearch bs5 = new BinarySearch(0,actual);
 		Assert.assertEquals(bs5.getPosition(), -1, "is zero  in the array");
 		BinarySearch bs6 = new BinarySearch(10000,actual);
-		Assert.assertEquals(bs5.getPosition(), -1, "Lagert number plus one is zero  in the array");
+		Assert.assertEquals(bs6.getPosition(), -1, "Lagert number plus one is zero  in the array");
+	}
+	
+	@Test
+	public void binarysearchMeEasyTest(){
+		BinarySearch bs = new BinarySearch();
+		Assert.assertEquals(bs.searchMeEasy(50, actual), -1, "Not in the array");
+		Assert.assertEquals(bs.searchMeEasy(20, actual), 0, "First element in the array");
+		Assert.assertEquals(bs.searchMeEasy(9999, actual), 10, "Last element in the array");
+		Assert.assertEquals(bs.searchMeEasy(36, actual), 2, "duplicate element in the array");
+		Assert.assertEquals(bs.searchMeEasy(0, actual), -1, "is zero  in the array");
+		Assert.assertEquals(bs.searchMeEasy(10000, actual), -1, "Lagert number plus one is zero  in the array");
 	}
 
 }
