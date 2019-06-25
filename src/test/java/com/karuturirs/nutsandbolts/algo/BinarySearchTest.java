@@ -28,6 +28,8 @@ public class BinarySearchTest {
 		Assert.assertEquals(bs5.getPosition(), -1, "is zero  in the array");
 		BinarySearch bs6 = new BinarySearch(10000,actual);
 		Assert.assertEquals(bs6.getPosition(), -1, "Lagert number plus one is zero  in the array");
+		BinarySearch bs7 = new BinarySearch(234,actual);
+		Assert.assertEquals(bs7.getPosition(), 7, "Lagert number plus one is zero  in the array");
 	}
 	
 	@Test
@@ -39,6 +41,7 @@ public class BinarySearchTest {
 		Assert.assertEquals(bs.searchMeEasy(36, actual), 2, "duplicate element in the array");
 		Assert.assertEquals(bs.searchMeEasy(0, actual), -1, "is zero  in the array");
 		Assert.assertEquals(bs.searchMeEasy(10000, actual), -1, "Lagert number plus one is zero  in the array");
+		Assert.assertEquals(bs.searchMeEasy(234, actual), 7, "Lagert number plus one is zero  in the array");
 	}
 
 }

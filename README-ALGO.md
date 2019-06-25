@@ -4,7 +4,7 @@
 | :------------: | :-------------: | :--------------: | :----------------------------------------------------------: |
 | Insertion Sort |      $n^2$      |                  |              cards sorted right to left in hand              |
 |   Merge Sort   |   $n*log n $    |                  | DIvide and conquer, two sorted piles shown up. create new pile which ever is small |
-|                |                 |                  |                                                              |
+|  Bubble sort   |                 |                  |                                                              |
 |                |                 |                  |                                                              |
 |                |                 |                  |                                                              |
 |                |                 |                  |                                                              |
