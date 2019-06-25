@@ -1,21 +1,23 @@
 package com.karuturirs.nutsandbolts.algo;
 
-import static org.testng.Assert.assertEquals;
-
-import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.Assert;
 
-public class MergeSortTest{
+public class BubbleSortTest{
 
   int actual[] = {36,20,33,1000,250,46,99,234,66,36,9999};
-  //int expected[] = {20,33,36,36,46,66,99,234,250,1000,9999};
 
-  MergeSort mr = new MergeSort();
-  
+  @BeforeMethod
+  public void setUp(){
+
+  }
+
   @Test
-  public void checkOnMergeSort(){
+  public void sortMeTest(){
       boolean flag = false;
-      mr.merge_sort(actual,1,11);
+      BubbleSort bs = new BubbleSort();
+      bs.sortMe(actual);
       for(int i=0; i<(actual.length-1); i++){
         if(actual[i] > actual[i+1]){
           flag = true;
@@ -23,7 +25,6 @@ public class MergeSortTest{
       }
       Assert.assertEquals(flag, false, "not in sorted order");
   }
-
 
 
 }
