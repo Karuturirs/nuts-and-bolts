@@ -30,4 +30,28 @@ public class HornersRule{
     return y;
   }
 
+  public int nativeCompute(int x, int[] a, int n){
+      int y = 0;
+      for(int i=0 ; i<= n && i < a.length; i++ ){
+    	  y = y + (a[i] * power(x,i));
+      }
+
+      return y;
+  }
+  public int power(int x,int i){
+
+	  if(x == 0){
+		  if(i==0){
+			 return 1;
+		  }else{
+			  return 0;
+		  }
+
+	  }else if(i == 0){
+		  return 1;
+	  }else{
+		 return (i>0)?(x * power(x,i-1)):-1;
+	  }
+
+  }
 }
